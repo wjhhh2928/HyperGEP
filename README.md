@@ -3,7 +3,7 @@
 HyperGEP provides a highly scalable computational solution for dissecting crop environmental adaptation and accelerating climate-resilient design breeding. By addressing the gradient conflicts across pleiotropic traits induced by early feature coupling, this decoupled two-stage deep learning framework accurately captures non-stationary spatial environmental gradients and resolves complex genotype-environment (G $\times$ E) interactions.
 
 <p align="center">
-    <img src="image/Fig_1.png" alt="Model" width="85%">
+    <img src="image/Fig. 1.png" alt="Model" width="85%">
 </p>
 
 # 🌟 Key Methodological Advances
