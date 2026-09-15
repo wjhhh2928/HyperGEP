@@ -20,9 +20,9 @@ from utils.metrics import pearson_loss, visualize_trait_weights
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--env_path", type=str, default="/mnt/mydisk/zyq-mnt/G-E-Phes/env-geno/train_data/new_data/env_new2_3000.npy")
-    parser.add_argument("--snp_path", type=str, default="/mnt/mydisk/zyq-mnt/G-E-Phes/env-geno/train_data/new_data/gene_new2_3000.npy")
-    parser.add_argument("--phe_path", type=str, default="/mnt/mydisk/zyq-mnt/G-E-Phes/env-geno/train_data/new_data/phe_new2_3000_star.csv")
+    parser.add_argument("--env_path", type=str, default="./env.npy")
+    parser.add_argument("--snp_path", type=str, default="./gene.npy")
+    parser.add_argument("--phe_path", type=str, default="./phe.csv")
     #default -1，Represents automatically running all traits
     parser.add_argument("--target_idx", type=int, default=-1, help="Target trait index. Set to -1 to run all traits sequentially.")
     parser.add_argument("--k_neig", type=int, default=9)
