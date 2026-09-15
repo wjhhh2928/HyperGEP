@@ -11,6 +11,8 @@ Physical Interpretability: Gradient-based saliency mapping physically co-localiz
 
 # 📂 Repository Structure
 Based on the project architecture, the codebase is organized as follows:
+
+```text
 HyperGEP/
 ├── dataset/
 │   ├── __init__.py
@@ -23,6 +25,7 @@ HyperGEP/
 │   ├── graph.py            # Hypergraph construction and topology utilities
 │   └── metrics.py          # Evaluation metrics (e.g., predictive ability, LOEO CV)
 └── train.py                # Main training and evaluation pipeline
+```
 
 # 🛠️ Environment & Installation
 Requires Python ≥ 3.8 and PyTorch ≥ 1.10. A CUDA-enabled environment is strictly required for efficient hypergraph and convolutional operations.
@@ -51,6 +54,7 @@ Shape: [N, T] (N = individuals/samples, T = traits).
 
 # 🚀 Quick Start
 The entire modeling pipeline, from parallel encoding to prediction-space fusion, is executed through train.py.
+
 # Execute the main training pipeline with default configurations
 python train.py
 Module Breakdown
@@ -69,7 +73,7 @@ Genomes to Fields (G2F): Extensive multi-environment maize trials.
 
 (Note: Please ensure you comply with the respective data usage agreements when downloading these datasets from their official repositories.)
 
-🎓 Citation
+# 🎓 Citation
 If this framework assists your research in quantitative genetics or computational biology, please cite our manuscript:
 Zhang Q., Wang, J., Zhang, Y., Li, B., Zhang, B., Zhao, X., Wang, Y., Piao, X., Zhang, B., & Wang, K.. A decoupled hypergraph neural network resolves genotype-environment interactions in maize multi-trait prediction.
 
