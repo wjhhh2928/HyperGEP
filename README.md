@@ -35,6 +35,10 @@ git clone https://github.com/your-username/HyperGEP.git
 cd HyperGEP
 
 # Install dependencies
+# 1.Give priority to using the PyTorch CUDA 11.8 source to install the core deep learning packages
+pip install torch==2.4.1+cu118 torchvision==0.19.1+cu118 torchaudio==2.4.1+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+
+# 2. Install the remaining project dependencies
 pip install -r requirements.txt
 Core dependencies: torch, numpy, pandas, scipy, scikit-learn, networkx.
 # 💾 Data Preparation
