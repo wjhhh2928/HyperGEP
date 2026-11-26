@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+.venv/
+artifacts/
+data/
+reports/SOURCE_INVENTORY.tsv
+reports/SOURCE_INVENTORY_SUPPLEMENT.tsv
+reports/RELEASE_MANIFEST.json
+*.pt
+*.pth
+*.joblib
+*.zip
+*.rar
+*.xlsx
+.env

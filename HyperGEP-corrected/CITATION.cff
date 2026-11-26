@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: Please cite the accompanying manuscript and identify the code revision used.
+title: HyperGEP
+version: 0.1.0
+repository-code: https://github.com/wjhhh2928/HyperGEP
+authors:
+  - family-names: Zhang
+    given-names: Qiusi
+  - family-names: Wang
+    given-names: Jiahui
+  - family-names: Zhang
+    given-names: Yong
+  - family-names: Li
+    given-names: Bo
+  - family-names: Zhang
+    given-names: Dongfeng
+  - family-names: Zhao
+    given-names: Xiangyu
+  - family-names: Wang
+    given-names: Yujiani
+  - family-names: Piao
+    given-names: Xinglin
+  - family-names: Zhang
+    given-names: Bob
+  - family-names: Wang
+    given-names: Kaiyi

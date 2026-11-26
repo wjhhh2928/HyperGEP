@@ -1,0 +1,25 @@
+panel	claim	manuscript	evidence_value	evidence	status	notes
+Fig.2	trait count	11	11	Supplementary Data 1.xlsx	VERIFIED	Workbook coverage only
+Fig.3	trait count	3	3	Supplementary Data 1.xlsx	VERIFIED	Workbook coverage only
+Fig.2a	HyperGEP Y PCC	approximately 0.94	0.8537	Supplementary Data 1.xlsx	VALUE_DIFFERS	Rounded legacy mean
+Fig.3a	Y HyperGEP median PCC	>0.7	0.7693	Supplementary Data 1.xlsx	VERIFIED	Median of five displayed fold values
+Fig.3a	PH HyperGEP median PCC	>0.7	0.7361	Supplementary Data 1.xlsx	VERIFIED	Median of five displayed fold values
+Fig.3a	GM HyperGEP median PCC	>0.7	0.7713	Supplementary Data 1.xlsx	VERIFIED	Median of five displayed fold values
+Fig.2–3	MaizeGEP PCC fold means	mean of five folds	0	Supplementary Data 1.xlsx	VERIFIED	Value is number of rows outside tolerance for four-decimal fold exports
+Fig.2–3	MaizeGEP MAE fold means	mean of five folds	0	Supplementary Data 1.xlsx	VERIFIED	Value is number of rows outside tolerance for four-decimal fold exports
+Fig.2–3	MaizeGEP RMSE fold means	mean of five folds	0	Supplementary Data 1.xlsx	VERIFIED	Value is number of rows outside tolerance for four-decimal fold exports
+Fig.2–3	G2F PCC fold means	mean of five folds	0	Supplementary Data 1.xlsx	VERIFIED	Value is number of rows outside tolerance for four-decimal fold exports
+Fig.2–3	G2F MAE fold means	mean of five folds	0	Supplementary Data 1.xlsx	VERIFIED	Value is number of rows outside tolerance for four-decimal fold exports
+Fig.2–3	G2F RMSE fold means	mean of five folds	0	Supplementary Data 1.xlsx	VERIFIED	Value is number of rows outside tolerance for four-decimal fold exports
+Fig.4d–e	Maize_Quantitative_Transfer	legacy quantitative transfer table	True	Supplementary Data 1.xlsx and local transfer CSV	VERIFIED	Compare numerical columns in listed trait order
+Fig.4d–e	Maize_Quantitative_Transfer sign counts	early-coupled negative and HyperGEP positive tendency	early-coupled negative 8/11; HyperGEP positive 10/11	Historical transfer summary	PARTIAL	Matched fold IDs do not verify matched records or supervision
+Fig.4d–e	G2F_Quantitative_Transfer	legacy quantitative transfer table	True	Supplementary Data 1.xlsx and local transfer CSV	VERIFIED	Compare numerical columns in listed trait order
+Fig.4d–e	G2F_Quantitative_Transfer sign counts	early-coupled negative and HyperGEP positive tendency	early-coupled negative 2/3; HyperGEP positive 2/3	Historical transfer summary	PARTIAL	Matched fold IDs do not verify matched records or supervision
+Fig.5e–f	environment count	2382	not recoverable from this workbook	Supplementary Data 2 Comprehensive Leave-One-Environment-Out (LOEO) generalization metrics.xlsx	MISSING_EVIDENCE	Acquire a portable workbook and source split
+Methods	MaizeGEP aligned record count	3000	unbound	legacy arrays and source candidates	MISSING_EVIDENCE	Need exact matching input and selection recipe
+Fig.6a	SNP count	12233	12233	Supplementary Data 5.xlsx/SNP_Importance	VERIFIED	Workbook dimensions verify exported rows, attribution lineage pending
+Fig.6b	1 Mb regional entries	1753	1753	Supplementary Data 6.xlsx/Regional_Importance	VERIFIED	Workbook dimensions verify exported rows, attribution lineage pending
+Fig.6c	balanced record count	952	952	Supplementary Data 7.xlsx/Sample_Metadata	VERIFIED	Workbook dimensions verify exported rows, attribution lineage pending
+Fig.6c	genotype groups	120	120	Supplementary Data 7.xlsx/Sample_Metadata	VERIFIED	Workbook dimensions verify exported rows, attribution lineage pending
+Fig.6d–e	conditional bootstrap replicates	50	50	Supplementary Data 8.xlsx/Bootstrap_Raw	VERIFIED	Workbook dimensions verify exported rows, attribution lineage pending
+S6	masking cohort per trait	132	unbound	held-out masking source	MISSING_EVIDENCE	Need cohort sample IDs and fold-trained control-matching evidence

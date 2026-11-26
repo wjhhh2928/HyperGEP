@@ -1,0 +1,11 @@
+dataset	metric	traits	folds	valid_fold_values	max_abs_error	status
+maizegep	1_Early_Coupled	11	5	165	1.1102230246251565e-16	VERIFIED
+maizegep	2_Independent	11	5	165	0.0	VERIFIED
+maizegep	3_HyperGEP	11	5	165	1.1102230246251565e-16	VERIFIED
+maizegep	Negative_Transfer (Coupled-Ind)	11	5	165	9.75781955236954e-17	VERIFIED
+maizegep	Synergy_Gain (HyperGEP-Ind)	11	5	165	7.849623728795052e-17	VERIFIED
+g2f	1_Early_Coupled	3	5	45	5.551115123125783e-17	VERIFIED
+g2f	2_Independent	3	5	45	0.0	VERIFIED
+g2f	3_HyperGEP	3	5	45	1.1102230246251565e-16	VERIFIED
+g2f	Negative_Transfer (Coupled-Ind)	3	5	45	4.7379634937616544e-17	VERIFIED
+g2f	Synergy_Gain (HyperGEP-Ind)	3	5	45	1.734723475976807e-16	VERIFIED

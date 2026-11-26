@@ -1,0 +1,7 @@
+.git
+.venv
+artifacts
+data
+.pytest_cache
+**/__pycache__
+reports/SOURCE_INVENTORY*.tsv

@@ -1,0 +1,16 @@
+name: CPU checks
+on: [push, pull_request]
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install --index-url https://download.pytorch.org/whl/cpu torch==2.5.1
+      - run: pip install -r requirements.txt pytest
+      - run: python -m compileall -q hypergep experiments scripts tests
+      - run: python -m pytest -q
+      - run: REPRO_MODE=demo OUTPUT_DIR="$RUNNER_TEMP/hypergep" ./run
+      - run: python -m scripts.verify_release --structure-only

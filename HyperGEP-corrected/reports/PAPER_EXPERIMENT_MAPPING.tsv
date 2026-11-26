@@ -1,0 +1,15 @@
+figure	panel	dataset	trait	experiment	original_script	original_result_file	checkpoint	data_version	evaluation_protocol	reproduction_status	known_issue	corrected_script	corrected_result_file
+2	a–f	maizegep	11 traits	main and baselines	train_3hgat_cnn_5zhe_xin.py (candidate)	Supplementary Data 1.xlsx	unbound	unknown	unverified historical	PARTIAL	legacy leakage	main/baselines	pending
+2	g–h	maizegep	reported	prediction distribution		companion predictions workbook (candidate)	unbound	unknown	unverified historical	PARTIAL	paired lineage missing	aggregate	pending
+3	all	g2f	Y PH GM	main and baselines	dataset-specific binding pending	Supplementary Data 1.xlsx	unbound	unknown	unverified historical	PARTIAL	legacy leakage	main/baselines	pending
+4	a–b	both	all	ablation	消融实验1.py; 消融实验2.py; 消融2_run_nky.py	companion result candidates	unbound	unknown	unverified historical	PARTIAL	setting differences	ablation	pending
+4	c	g2f	reported	DNNGP and DeepGS		comparison evidence pending	unbound	unknown	unverified historical	RECONSTRUCTED	original implementations missing	experiments.run_genomic_comparators	pending
+4	d–e	both	all	negative transfer	visualization only	负迁移结果2/**/Raw_Fold_Results.csv	unbound	unknown	unverified historical	PARTIAL	training provenance missing	negative_transfer	pending
+4	f–g	both	all	K sensitivity	train_3hgat_cnn_5zhe_xin_run2_k.py (candidate)	companion K summaries	K=11 PTH candidates	unknown	unverified historical	PARTIAL	fold provenance	sensitivity	pending
+5	e–f	maizegep	all	LOEO	lolo_30.py (candidate)	Supplementary Data 2 Comprehensive Leave-One-Environment-Out (LOEO) generalization metrics.xlsx	unbound	unknown	legacy LOEO	PARTIAL	global preprocessing and graph	experiments.run_loeo and scripts.plot_loeo	pending
+6	all	both	reported	interpretability	adjacent analysis candidates	Supplementary Data 3–8.xlsx	unbound	unknown	unverified historical	PARTIAL	checkpoint provenance	interpretability	pending
+S5	all	maizegep	reported	paired residuals		companion predictions workbook (candidate)	unbound	unknown	unverified historical	PARTIAL	independence unverified	aggregate	pending
+5	a–d	both	all	Meta-Fusion influence	candidate history	manuscript and supplementary figures	unbound	unknown	unverified historical	PARTIAL	caption pairs crossed	scripts.meta_dependencies	pending
+S4	all	both	all	trait dependence	candidate history	Supplementary Information PDF	unbound	unknown	unverified historical	PARTIAL	panel lineage	 scripts.meta_dependencies	pending
+S6	all	maizegep	PH Y KNPR	held-out marker masking	candidate history	Supplementary Information PDF	unbound	unknown	unverified historical	RECONSTRUCTED	original sample membership missing	experiments.run_interpretability	pending
+S1–S3	all	maizegep	10 non-yield traits	baseline metrics	candidate history	Supplementary Data 1.xlsx	unbound	unknown	unverified historical	PARTIAL	outer split lineage	experiments.run_baselines and scripts.aggregate_results	pending

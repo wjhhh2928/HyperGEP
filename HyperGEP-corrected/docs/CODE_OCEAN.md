@@ -1,0 +1,11 @@
+# Code Ocean
+
+Import the candidate after the project owner approves the source and data licenses. A repository with top-level code files may import to Other Files. Place the driver, packages, scripts and configuration under the capsule's `/code`. Add the environment build instructions in the Environment editor and set `run` as the driver. Use a Python 3.11 starter with the CPU PyTorch post-install script for demo and prediction reproduction. For full runs, add the approved optional comparators and choose platform-compatible PyTorch with CUDA when using a GPU.
+
+The driver reads from `/data` and writes to `/results` by default. `PROJECT_ROOT`, `DATA_DIR` and `OUTPUT_DIR` override those paths. Build-time `postInstall` installs dependencies independently of `/code` and `/data`. For local Linux Docker use `docker build -f environment/Dockerfile -t hypergep-demo .` and a mounted writable `/results`.
+
+- `REPRO_MODE=demo ./run` runs one synthetic outer fold, metrics and charts.
+- `REPRO_MODE=reproduce ./run` is the default. It checks `/data/reproduction_bundle/bundle_manifest.json` and recomputes metrics and diagnostic plots from frozen predictions. The manifest must identify `scope` as `paper_candidate` and map bundle relative paths to SHA256 values in `files`. Run manifests under `results/` must be checksum-listed and their result artifacts must verify. Checkpoint-based inference is separately recorded as unexecuted. To replay a trusted local deep run, use python -m scripts.replay_checkpoint RUN_DIRECTORY --data-dir DATA_DIR.
+- `REPRO_MODE=full ./run` dispatches the configured retraining and analysis matrix. The real data assets and optional dependencies are necessary.
+
+A clean Code Ocean Reproducible Run has a new `/results` directory. Persist approved checkpoints as an attached asset for future runs. The provided local Dockerfile is for explicit Docker builds. [Git import guide](https://docs.codeocean.com/user-guide/compute-capsule-basics/version-control/importing-a-capsule-from-a-git-provider), [Environment setup](https://docs.codeocean.com/user-guide/compute-capsule-basics/structure-of-a-compute-capsule/environment), [Reproducible Runs](https://docs.codeocean.com/user-guide/v3.3.0/compute-capsule-basics/reproducible-runs)

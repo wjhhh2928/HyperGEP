@@ -1,0 +1,12 @@
+experiment	dataset	implementation_status	local_test	formal_status	evidence
+main	maizegep	RECONSTRUCTED	synthetic CPU	REQUIRES_RETRAINING	Formal MaizeGEP raw assets pending
+main	g2f	RECONSTRUCTED	real excerpt CPU outer fold 0	REQUIRES_RETRAINING	160 records from local G2F releases for pipeline only
+baselines	both	RECONSTRUCTED	core methods synthetic CPU	REQUIRES_RETRAINING	Legacy comparators unbound
+genomic_comparators	g2f	RECONSTRUCTED	synthetic CPU	REQUIRES_RETRAINING	DNNGP and DeepGS published topology adapters
+ablation	both	RECONSTRUCTED	synthetic CPU	REQUIRES_RETRAINING	Fold and budget rules shared
+negative_transfer	both	RECONSTRUCTED	synthetic CPU	REQUIRES_RETRAINING	Historical arithmetic verified but training lineage missing
+sensitivity	both	RECONSTRUCTED	synthetic CPU	REQUIRES_RETRAINING	New predeclared K grid
+loeo	maizegep	RECONSTRUCTED	synthetic CPU	REQUIRES_RETRAINING	Official environment keys and portable legacy sheet needed
+meta_dependencies	both	RECONSTRUCTED	synthetic CPU	NOT_RUN	Await formal frozen Meta checkpoints
+interpretability_and_masking	both	RECONSTRUCTED	synthetic CPU	REQUIRES_RETRAINING	Source models marker build and presentation pending
+historical_visualizations	both	PARTIAL	workbook audit	PARTIAL	Some provenance and original panel recipes unknown

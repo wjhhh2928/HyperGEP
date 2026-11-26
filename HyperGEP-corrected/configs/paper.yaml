@@ -1,0 +1,34 @@
+model_version: corrected-v1
+graph_mode: inductive
+random_seeds: [42]
+output_dir: artifacts/corrected
+hardware: {device: cpu, cpu_threads: 2}
+outer_cv: {strategy: record, folds: 5}
+inner_cv: {strategy: inherit, folds: 5}
+model_parameters: {width: 64, tokens: 16, heads: 4, dropout: 0.1, graph_layers: 2, k_neighbors: 9}
+preprocessing: {environment: {}, snp: {}}
+training_parameters: {base_epochs: 100, meta_epochs: 200, batch_size: 32, learning_rate: 0.001, weight_decay: 0.0001, pearson_weight: 0.2, checkpoint_every: 5}
+evaluation: {test_strategy: refit, loeo_minimum: 80, k_candidates: [3, 5, 7, 9, 11]}
+baselines: {trees: 100, epochs: 100, kernel_alpha: 1.0}
+sample_id_column: sample_id
+genotype_id_column: genotype_id
+environment_id_column: environment_id
+site_id_column: site_id
+datasets:
+  maizegep:
+    trait_names: [DTT, DTS, DTM, PH, EH, 100KW, EL, Y, KNPR, ED, RNPE]
+    data_paths:
+      phenotypes: maizegep/phenotypes.csv
+      genotypes: maizegep/genotypes.csv
+      environments: maizegep/environments.csv
+      provenance: maizegep/provenance.json
+  g2f:
+    trait_names: [Y, PH, GM]
+    data_paths:
+      phenotypes: g2f/phenotypes.csv
+      genotypes: g2f/genotypes.csv
+      environments: g2f/environments.csv
+      provenance: g2f/provenance.json
+  demo:
+    trait_names: [Y, PH, GM]
+    data_paths: {}
