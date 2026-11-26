@@ -83,7 +83,7 @@ Genomes to Fields (G2F): Extensive multi-environment maize trials.
 
 # 🎓 Citation
 If this framework assists your research in quantitative genetics or computational biology, please cite our manuscript:
-Zhang Q., Wang, J., Zhang, Y., Li, B., Zhang, B., Zhao, X., Wang, Y., Piao, X., Zhang, B., & Wang, K.. A decoupled hypergraph neural network resolves genotype-environment interactions in maize multi-trait prediction.
+Zhang Q., Wang, J., Zhang, Y., Li, B., Zhang, B., Zhao, X., Wang, Y., Piao, X., Zhang, B., & Wang, K..Decoupled integration of genomic and environmental information improves multi-trait prediction in maize.
 
 # 📄 License
 This project is licensed under the MIT License.
