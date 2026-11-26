@@ -1,5 +1,5 @@
 # HyperGEP
-# 🌽 HyperGEP: Decoupled Hypergraph Neural Network for Joint Gene-Environment ModelingOfficial PyTorch implementation of the framework described in "A decoupled hypergraph neural network resolves genotype-environment interactions in maize multi-trait prediction".
+# 🌽 HyperGEP: Decoupled Hypergraph Neural Network for Joint Gene-Environment ModelingOfficial PyTorch implementation of the framework described in "Decoupled integration of genomic and environmental information improves multi-trait prediction in maize".
 HyperGEP provides a highly scalable computational solution for dissecting crop environmental adaptation and accelerating climate-resilient design breeding. By addressing the gradient conflicts across pleiotropic traits induced by early feature coupling, this decoupled two-stage deep learning framework accurately captures non-stationary spatial environmental gradients and resolves complex genotype-environment (G $\times$ E) interactions.
 
 <p align="center">
