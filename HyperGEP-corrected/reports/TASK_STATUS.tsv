@@ -1,0 +1,14 @@
+stage	deliverable	status	remaining
+0	Original source guards, SHA256 and private snapshot	PARTIAL	Public clone connection reset and external server unavailable
+1	Initial audit and figure mapping	PARTIAL	Historic tie-out incomplete
+2	Canonical data schema and fold-local transforms	VERIFIED	Paper-cohort adapters and verified manifests pending
+3	Nested OOF and no-leakage checks	VERIFIED	Full paper protocols not run
+4	Incidence graph and SNP attention candidate	VERIFIED	Author review of candidate architecture pending
+5	Main baseline ablation and Fig. 4c comparative code	RECONSTRUCTED	Freeze parameters and validate optional packages
+6	Negative transfer	RECONSTRUCTED	Legacy trainer missing and formal re-evaluation pending
+7	LOEO and grouped CV	RECONSTRUCTED	Formal environment evidence pending
+8	Figure analyses and held-out masking	RECONSTRUCTED	Formal input and paper panel recipes pending
+9	CPU tests and G2F real-data short run	VERIFIED	CUDA unavailable
+10	Manuscript audit and revision list	PARTIAL	Case-level provenance evidence pending
+11	GitHub candidate and Code Ocean driver	PARTIAL	License, Docker and Capsule verification pending
+12	Release gate	BLOCKED	See RELEASE_BLOCKERS.md

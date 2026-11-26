@@ -1,0 +1,16 @@
+model_version: corrected-v1
+graph_mode: inductive
+random_seeds: [42]
+output_dir: artifacts/demo
+hardware: {device: cpu, cpu_threads: 1}
+outer_cv: {strategy: record, folds: 5}
+inner_cv: {strategy: inherit, folds: 2}
+model_parameters: {width: 8, tokens: 4, heads: 2, dropout: 0.1, graph_layers: 1, k_neighbors: 3}
+preprocessing: {environment: {}, snp: {}}
+training_parameters: {base_epochs: 1, meta_epochs: 1, batch_size: 32, learning_rate: 0.002, weight_decay: 0.0, pearson_weight: 0.1, checkpoint_every: 1}
+evaluation: {test_strategy: refit, loeo_minimum: 1, k_candidates: [2, 3]}
+baselines: {trees: 4, epochs: 5, kernel_alpha: 1.0}
+datasets:
+  demo:
+    trait_names: [Y, PH, GM]
+    data_paths: {}

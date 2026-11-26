@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "${PROJECT_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)}"
+export PYTHONDONTWRITEBYTECODE=1
+export DATA_DIR="${DATA_DIR:-/data}"
+export OUTPUT_DIR="${OUTPUT_DIR:-/results}"
+case "${REPRO_MODE:-reproduce}" in
+  demo)
+    python -m experiments.run_main --dataset demo --fold 0 --device cpu --output-dir "$OUTPUT_DIR/demo"
+    python -m scripts.aggregate_results "$OUTPUT_DIR/demo" --demo --output-dir "$OUTPUT_DIR/demo/summary"
+    ;;
+  reproduce)
+    python -m scripts.reproduce "$DATA_DIR/reproduction_bundle" --output-dir "$OUTPUT_DIR/reproduced"
+    ;;
+  full)
+    bash scripts/run_full.sh
+    ;;
+  *)
+    echo "Use REPRO_MODE=demo, reproduce or full" >&2
+    exit 2
+    ;;
+esac

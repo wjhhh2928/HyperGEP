@@ -1,0 +1,9 @@
+# Model
+
+A node is one training environment ID. Each training node centers a hyperedge containing itself and up to K−1 feature-nearest training nodes. Message weights use masked softmax over node incidence and then edge incidence, so each direction is degree-normalized by its own learned weights. The model uses bipartite incidence directly. A separate helper computes the symmetric normalized propagation matrix G for numerical diagnostics. A new query reads frozen training edges around its nearest centers independently of other queries. A known training environment reuses its training-node representation.
+
+The CNN projects ordered SNP dosages into 16 tokens by default. Environment queries attend across the SNP tokens. Positions reflect convolution and pooling geometry. Module ablations replace environment HGAT with an MLP, the SNP CNN with a genotype-node HGAT plus token projections, or multihead attention with a pooled concatenation MLP. The single-key variant uses the corrected evaluation protocol and a degenerate-key fusion. The untouched legacy implementation is archived separately.
+
+Single-trait branches learn independently. Meta-Fusion sees only OOF branch predictions when fitting. Its target-specific attention uses each source prediction to assign sample-dependent weights, normalized over sources. A fixed epoch budget avoids validation choices involving second-level labels. Inner predictions and label scaling remain within their supervision splits. The outer test strategy is either refitting on outer train or averaging the frozen inner models. Both strategies are selected before evaluation.
+
+Masked loss averages across traits observed in the current batch. Meta-Fusion and deep branches use fold-local target scaling and a fixed MSE plus Pearson objective. When a training split contains zero observed labels for a required trait, the task is blocked.
